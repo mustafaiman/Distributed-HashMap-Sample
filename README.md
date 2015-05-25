@@ -11,7 +11,7 @@ An instance of this application needs to know ip address and public port number 
 After starting an instance you can learn its ip address and public port by typing *getip*. Then you can use this information to join other instances
 to the cluster.
 
-*connect <ip> <port>* connects the instance to specified cluster. After this point, the changes you make to the hashtable on
+*connect -ip- -port-* connects the instance to specified cluster. After this point, the changes you make to the hashtable on
 one instance is reflected on the others.
 ##Issues
 An instance which joins a cluster after some time cannot retrieve the entries which were created before it joined the cluster.
