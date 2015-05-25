@@ -15,6 +15,33 @@ to the cluster.
 one instance is reflected on the others.
 
 *help* command retrieves a comprehensive list of available commands.
+
+###Sample Scenario
+**Node 1**
+
+getip
+
+*123.456.789.123:4040*
+
+**Node 2**
+
+connect 123.456.789.123 4040
+
+put key value
+
+**Node 1**
+
+get key
+
+*value*
+
+remove key
+
+**Node 2**
+
+get key
+
+*null*
 ##Issues
 An instance which joins a cluster after some time cannot retrieve the entries which were created before it joined the cluster.
 This is caused by inability of underlying Distributed Hashmap library.
