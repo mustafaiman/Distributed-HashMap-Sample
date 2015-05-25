@@ -13,6 +13,8 @@ to the cluster.
 
 *connect -ip- -port-* connects the instance to specified cluster. After this point, the changes you make to the hashtable on
 one instance is reflected on the others.
+
+*help* command retrieves a comprehensive list of available commands.
 ##Issues
 An instance which joins a cluster after some time cannot retrieve the entries which were created before it joined the cluster.
 This is caused by inability of underlying Distributed Hashmap library.
